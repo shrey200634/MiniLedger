@@ -1,0 +1,12 @@
+# secrets
+.env
+
+# dependencies and build output
+node_modules
+dist
+
+# local file storage (receipt uploads, optional bonus)
+storage/
+
+# logs
+*.log
