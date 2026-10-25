@@ -6,7 +6,7 @@ import { configureApp } from './configure-app';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   configureApp(app);
-  app.enableShutdownHooks();
+  app.enableShutdownHooks(); // this is oue new shutydown 
 
   const port = app.get(ConfigService).getOrThrow<number>('PORT');
   // 0.0.0.0 so a phone on the same network (or USB reverse) can reach the API.
